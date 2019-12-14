@@ -22,22 +22,22 @@ app.use(express.static(publicDirectoryPath))
 app.get('', (req, res) => {
     res.render('index', {
         title: 'Weather',
-        name: 'Andrew Mead'
+        name: 'Sayan Mishra'
     })
 })
 
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About Me',
-        name: 'Andrew Mead'
+        name: 'Sayan Mishra'
     })
 })
 
 app.get('/help', (req, res) => {
     res.render('help', {
-        helpText: 'This is some helpful text.',
+        helpText: 'This is me the invincible.',
         title: 'Help',
-        name: 'Andrew Mead'
+        name: 'Sayan Mishra'
     })
 })
 
@@ -83,7 +83,7 @@ app.get('/products', (req, res) => {
 app.get('/help/*', (req, res) => {
     res.render('404', {
         title: '404',
-        name: 'Andrew Mead',
+        name: 'Sayan Mishra',
         errorMessage: 'Help article not found.'
     })
 })
